@@ -1,0 +1,22 @@
+/* Styles */ 
+/*Banner*/ 
+#banner{position:relative;overflow:hidden;} 
+#banner .parallax-video, #banner .youtube-parallax-video, #banner .vimeo-parallax-video{min-height:100%;min-width:100%;position:fixed;z-index:-1;} 
+.youtube-banner-video,.vimeo-banner-video{width: 100%;height: 100%;} 
+[data-parallax="True"] .youtube-banner-video, [data-parallax="True"]  .vimeo-banner-video{transform:scale(1.75);z-index:-1;position:relative;height: 100vh;} 
+[data-parallax="True"] .banner-img{min-height:100%;min-width:100%;position:fixed;z-index:-1;object-fit:cover;} 
+[data-parallax="False"] iframe{width: 100%;height: 100%;} 
+[data-parallax="False"] .vimeo-banner-video iframe{transform:scale(1.26);} 
+.banner-inner,.carousel, .carousel-inner, .carousel-inner .item, .slider-img-container{height:115%;} 
+.carousel.fade {opacity: 1;} 
+.carousel.fade .item {-moz-transition: opacity ease-in-out .7s;-o-transition: opacity ease-in-out .7s;-webkit-transition: opacity ease-in-out .7s;transition: opacity ease-in-out .7s;left: 0 !important;opacity: 0;top:0;position:absolute;width: 100%;display:block !important;z-index:1;} 
+.carousel.fade .item:first-child {top:auto;position:relative;} 
+.carousel.fade .item.active {opacity: 1;-moz-transition: opacity ease-in-out .7s;-o-transition: opacity ease-in-out .7s;-webkit-transition: opacity ease-in-out .7s;transition: opacity ease-in-out .7s;z-index:2;} 
+.carousel-control{text-shadow: none;background: none;opacity: 1;top: 50%;height: 50px;transform: translateY(-50%);} 
+.carousel-control.left,.carousel-control.right{background: none;z-index: 5;} 
+.carousel-control span{position: absolute; transform: translate(-50%,-50%);left: 50%;top: 50%;} 
+/*Banner IE Code*/ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {.youtube-parallax-video, .vimeo-parallax-video{zoom:1.25;left:-12.5%;top:-20%;}} 
+/* = MEDIA QUERIES= */ 
+@media screen and ( max-width: 1200px ) {#banner .youtube-banner-video, #banner .vimeo-banner-video{transform:scale(1);height:auto;}} 
+@media screen and ( max-width: 991px ) {#banner .parallax-video, #banner img{height:auto;width:100%;position:relative;}}
